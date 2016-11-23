@@ -1,0 +1,518 @@
+body{
+    font-family: Calibri, Trebuchet MS;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+/* Page-header */
+.navbar{
+    min-height: 40px;
+    margin-bottom: 0px;
+}
+.navbar-brand {
+    height: 40px;
+    padding: 10px 15px;
+}
+
+.header-logo{
+    height: 20px;
+    position: absolute;
+    left: 45%;
+    display: block;
+}
+.header-logo-text{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 45%;
+    display: block;
+    padding: 1px 0 0 67px;
+}
+
+/* Page-header */
+
+/*Side-bar*/
+#sidebar-wrapper {
+    background: #3C3C3C;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1000;
+    transition: all 0.4s ease 0s;
+}
+
+#wrapper.active {
+    padding-left: 0;
+}
+
+#wrapper.active #sidebar-wrapper {
+    left: 0;
+}
+
+#page-content-wrapper {
+    background: #F3F3F3;
+    top: 40px;
+    transition: all 0.4s ease 0s;
+
+    position: relative;
+    height: 100%;
+    z-index: 10;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 10px;
+    width: 150px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-nav li {
+    height: 35px;
+    line-height: 35px;
+    text-indent: 10px;
+}
+
+.sidebar-nav li a {
+    color: #C5C5C5;
+    display: block;
+    text-decoration: none;
+
+}
+
+.sidebar-nav li a span:before {
+    position: absolute;
+    left: 0;
+    color: #41484c;
+    text-align: center;
+    width: 20px;
+    line-height: 18px;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav a.active {
+    color: #fff;
+    background: #3C3C3C;
+    text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    background: #3C3C3C;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    line-height: 60px;
+    font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #3C3C3C;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    text-decoration: none;
+    float: left;
+    color: black;
+    padding-right: 15px;
+    display: inline-block;
+}
+
+@media (min-width: 768px) {
+    #wrapper {
+        overflow: hidden;
+        padding-left: 150px;
+        transition: all 0.4s ease 0s;
+    }
+    #sidebar-large {
+        display: block;
+    }
+    #sidebar-small {
+        display:none;
+    }
+    .details-small{
+        display:none;
+    }
+    .details-large{
+        display: block;
+    }
+    #sidebar-wrapper {
+        margin-left: -150px;
+        top: 40px;
+        left: 150px;
+        width: 150px;
+    }
+    .bills-remove-title{
+        display: table-cell;
+    }
+}
+
+@media (max-width:767px) {
+    #wrapper {
+        overflow: hidden;
+        padding-left: 50px;
+        transition: all 0.4s ease 0s;
+    }
+    .navbar .container-fluid{
+        padding-left: 0px;
+    }
+
+    #sidebar-wrapper {
+        margin-left: -50px;
+        top: 40px;
+        left: 50px;
+        width: 50px;
+    }
+
+    /*#wrapper.active {
+        padding-left: 50px;
+        position: relative;
+    }
+
+    #wrapper.active #sidebar-wrapper {
+        left: 50px;
+        width: 50px;
+        transition: all 0.4s ease 0s;
+    }*/
+    #sidebar-small {
+        display: block;
+    }
+    #sidebar-large {
+        display:none;
+    }
+    .details-small{
+        display:block;
+    }
+    .details-large{
+        display: none;
+    }
+    .bills-remove-title{
+        display: none;
+    }
+}
+
+.logo-link a.logo-link:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar-nav>li>a{
+    padding: 3px 0px;
+}
+
+.sidebar-nav li a span{
+    font-size: 16px;
+    padding-left: 10px;
+}
+.sidebar-nav li a.active{
+
+}
+
+/* Side-bar */
+
+/* Page-Content */
+
+/* Page-Content */
+
+/* Main-Div */
+
+.col-md-12-body{
+    padding: 0;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .2);
+}
+
+.col-md-12-parent{
+    padding-bottom: 50px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+hr {
+    background-color: #3C3C3C;
+    height: 1px;
+    border: 0;
+    padding: 0;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+h2{
+    margin-top: 10px;
+    letter-spacing: -1px;
+}
+
+.nav-panel-body {
+    width: 100%;
+    z-index: 100000;
+}
+
+.nav-tabs > .legis-nav-tabs,
+.nav-tabs > .bills-nav-tabs,
+.nav-tabs > .committee-nav-tabs,
+.nav-tabs > .favorite-nav-tabs{
+    margin-bottom: 0px;
+}
+
+.nav-tabs>li>a:hover, .nav>li>a:focus, .nav>li>a:hover {
+    background-color: transparent !important;
+}
+
+.legis-nav-tabs a:hover,
+.legis-nav-tabs a:focus,
+.bills-nav-tabs a:hover,
+.bills-nav-tabs a:focus,
+.committee-nav-tabs a:hover,
+.committee-nav-tabs a:focus,
+.favorite-nav-tabs a:hover,
+.favorite-nav-tabs a:focus{
+    color: #3C3C3C;
+    background-color: white;
+}
+
+.legis-nav-tabs a,
+.bills-nav-tabs a,
+.committee-nav-tabs a,
+.favorite-nav-tabs a{
+    color: #E6E6E6;
+    padding: 5px 5px;
+}
+
+.nav-pagination{
+    text-align: center;
+}
+
+.panel-primary-legis-table,
+.panel-primary-bills-table,
+.panel-primary-committee-table,
+.panel-primary-favorite-table{
+    position: relative;
+    margin: 15px 15px;
+    width: auto;
+    z-index: 2;
+    border-radius: 5px;
+    border: 2px solid #DDDDDD;
+}
+
+/*.table-header-state,
+.table-header-house,
+.table-header-senate,
+.table-header-active-bills,
+.table-header-new-bills,
+{
+    height: 30px;
+    margin-top: 0px;
+    background-color: #F5F5F5;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 20px;
+    line-height: 29px;
+}*/
+
+.panel-primary>.panel-heading{
+    background-color: #F5F5F5;
+    border-color: #DDDDDD;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 7px 0px 0px 14px;
+    height: 40px;
+}
+
+.panel-heading .btn-group {
+   float: right;
+   margin-right: 2%;
+ }
+
+.table-panel-body{
+    padding: 5px 15px;
+}
+
+.view-detail-button{
+    padding: 4px 12px;
+}
+
+.align-right{
+    text-align: right;
+}
+.align-center{
+    text-align: center;
+}
+.flush-left{
+    display: inline-block;
+    text-align: left;
+}
+.col-xs-1{
+    white-space: nowrap;
+}
+
+.img-responsive{
+    display: inline;
+}
+@media (min-width: 768px) {
+    .bill-chamber-image{
+        width: 32%;
+    }
+    .table-userlist>tbody>tr>td{
+        padding: 6px 6px 6px 10px;
+        border-top: 2px solid #ddd;
+    }
+    .table-head-padding{
+        padding: 6px 6px 6px 10px;
+    }
+}
+
+@media (max-width:767px) {
+    .table-userlist>tbody>tr>td{
+        padding: 10px 15px;
+        border-top: 2px solid #ddd;
+        height: 30px;
+    }
+    .table-head-padding{
+        padding: 10px 15px;
+    }
+}
+
+.party-image{
+    width:2em;
+}
+.chamber-image-house{
+    width:1.5em;
+}
+.chamber-image-senate{
+    width: 1.4em;
+}
+
+.dropdown-menu{
+    overflow: auto;
+    max-height: 35em;
+}
+.legis-state-dropdown{
+   padding: 1px 70px 3px 10px;
+}
+.caret {
+    left: 85%;
+    top: 45%;
+    position: absolute;
+}
+.dropdown-menu>li>a{
+    padding: 0px 20px;
+}
+
+.view-detail-page-header{
+    height: 44px;
+    margin: 0;
+    padding: 9px 12px 0px 12px;
+}
+
+.view-detail-title{
+    line-height: 8px;
+    font-size: 23px;
+    float: left;
+    padding: 0px 0 0 5px;
+}
+
+.view-detail-header-back{
+    padding: 5px 10px 8px 10px;
+    float: left;
+}
+
+.favorite-star{
+    float: right;
+}
+.committee-favorite-star, .delete-favorite{
+    height: 2.5em;
+}
+
+.user-row-heading{
+    font-weight: bold;
+}
+.table-user-details{
+    margin: 0;
+}
+.table-user-details>tbody>tr>td{
+    padding: 6px;
+}
+
+.user-details-image{
+    width: 10em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user-details-header{
+    font-size: 20px;
+    word-wrap: break-word;
+}
+.user-details-table>tbody>tr>td{
+    padding: 8px 9px;
+    border-top: 2px solid #ddd;
+    height: 30px;
+    line-height: 20px;
+}
+.user-social-media{
+    float: left;
+    width: 2em;
+    padding: 0px 0px 0px 5px;
+}
+.form-house-search{
+    display: inline;
+    float: right;
+    margin: 0;
+    margin-right: 2%;
+}
+.house-search-control{
+    height: 80%;
+    width: 9em !important;
+    font-weight: normal;
+    font-size: 16px;
+}
+.fa-star:before{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: grey;
+}
+.fa-star{
+    color: white;
+}
+
+.favorite-star i.active,
+.committee-favorite-star i.active{
+    color: yellow;
+}
+
+.favorite-star:focus, .committee-favorite-star:focus{
+   outline: none !important;
+   background: white;
+}
+
+.favorite-legisuser-image{
+    height: 2.3em;
+}
+
+/* Main-Div */
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
